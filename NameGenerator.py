@@ -15,7 +15,7 @@ def tonegenerator(tone):
         name = ["Wizards", "Sorcerers", "Mystics", "Seers", "Oracles", "Spellbinders"]
     elif tone == "Futuristic":
         prefix = ["Cyber", "Neo", "Quantum", "Hyper", "Nano", "Techno"]
-        name = ["Runners", "Synths", "Drones", "Cyborgs", "Mechs", "Bots"]
+        name = ["Runners", "Synthesis", "Drones", "Cyborgs", "Mechs", "Bots"]
     else:
         return "Invalid Choice"
 
