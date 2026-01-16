@@ -13,4 +13,5 @@ def tonegenerator(tone):
     else:
         return "Invalid Choice"
 
-        
+    return random.choice(prefix) + " " + random.choice(name)
+
