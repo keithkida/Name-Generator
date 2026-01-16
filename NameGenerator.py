@@ -15,3 +15,4 @@ def tonegenerator(tone):
 
     return random.choice(prefix) + " " + random.choice(name)
 
+print(tonegenerator("Harsh"))
