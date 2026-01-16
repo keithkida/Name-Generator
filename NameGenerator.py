@@ -2,27 +2,27 @@ import random
 
 def tonegenerator(tone): 
     if tone == "Harsh":
-        prefix = ["Brutal", "Ultimate", "Vengful", "Savage", "Fierce", "Relentless"]
-        name = ["Bulls", "Tigers", "Warriors", "Marauders", "Ravagers", "Ironclaws"] 
+        prefix = ["Brutal", "Ultimate", "Vengful", "Savage", "Fierce", "Relentless", "Ruthless"]
+        name = ["Bulls", "Tigers", "Warriors", "Marauders", "Ravagers", "Ironclaws", "Destroyers"] 
     elif tone == "Elagant": 
-        prefix = ["Shining", "Victorious", "Hopeful", "Noble", "Radiant", "Glorious"]
-        name = ["Sanctum", "Concord", "Order", "Assembly", "Chronicle"]
+        prefix = ["Shining", "Victorious", "Hopeful", "Noble", "Radiant", "Glorious", "Majestic"]
+        name = ["Sanctum", "Concord", "Order", "Assembly", "Chronicle", "Legion", "Dynasty"]
     elif tone == "Whimsy": 
-        prefix = ["Wacky", "Playful", "Wonky", "Zany", "Quirky", "Bubbly"]
-        name = ["Tricksters", "Mischiefs", "Gigglefolk", "Bumblekins", "Jesters", "Jokers"]
+        prefix = ["Wacky", "Playful", "Wonky", "Zany", "Quirky", "Bubbly", "Cheerful", "Jolly"]
+        name = ["Tricksters", "Mischiefs", "Gigglefolk", "Bumblekins", "Jesters", "Jokers", "Pranksters"]
     elif tone == "Mystical":
-        prefix = ["Enchanted", "Arcane", "Mystic", "Ethereal", "Celestial", "Otherworldly"]
-        name = ["Wizards", "Sorcerers", "Mystics", "Seers", "Oracles", "Spellbinders"]
+        prefix = ["Enchanted", "Arcane", "Mystic", "Ethereal", "Celestial", "Otherworldly", "Divine"]
+        name = ["Wizards", "Sorcerers", "Mystics", "Seers", "Oracles", "Spellbinders", "Charmers"]
     elif tone == "Futuristic":
-        prefix = ["Cyber", "Neo", "Quantum", "Hyper", "Nano", "Techno"]
-        name = ["Runners", "Synthesis", "Drones", "Cyborgs", "Mechs", "Bots"]
+        prefix = ["Cyber", "Neo", "Quantum", "Hyper", "Nano", "Techno", "Digital", "Virtual"]
+        name = ["Runners", "Synthesis", "Drones", "Cyborgs", "Mechs", "Bots", "Riders", "Hackers"]
     else:
         return "Invalid Choice"
 
     return random.choice(prefix) + " " + random.choice(name)
 
-print(tonegenerator("Harsh"))
-print(tonegenerator("Elagant"))
-print(tonegenerator("Whimsy"))
-print(tonegenerator("Mystical"))
-print(tonegenerator("Futuristic"))
+input_tone = input("Tone Choice(Harsh, Elagant, Whimsy, Mystical, Futuristic): ")
+number_of_names = int(input("Number of Names to Generate: "))
+for i in range(number_of_names):
+    generator = tonegenerator(input_tone)
+    print(generator)
