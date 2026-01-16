@@ -6,7 +6,7 @@ def tonegenerator(tone):
         name = ["Bulls", "Tigers", "Warriors", "Marauders", "Ravagers", "Ironclaws"] 
     elif tone == "Elagant": 
         prefix = ["Shining", "Victorious", "Hopeful", "Noble", "Radiant", "Glorious"]
-        name = [, "Sanctum", "Concord", "Order", "Assembly", "Chronicle"]
+        name = ["Sanctum", "Concord", "Order", "Assembly", "Chronicle"]
     elif tone == "Whimsy": 
         prefix = ["Wacky", "Playful", "Wonky", "Zany", "Quirky", "Bubbly"]
         name = ["Tricksters", "Mischiefs", "Gigglefolk", "Bumblekins", "Jesters", "Jokers"]
@@ -24,3 +24,5 @@ def tonegenerator(tone):
 print(tonegenerator("Harsh"))
 print(tonegenerator("Elagant"))
 print(tonegenerator("Whimsy"))
+print(tonegenerator("Mystical"))
+print(tonegenerator("Futuristic"))
