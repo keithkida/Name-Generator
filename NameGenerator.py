@@ -4,7 +4,7 @@ def tonegenerator(tone):
     if tone == "Harsh":
         prefix = ["Brutal", "Ultimate", "Vengful", "Savage", "Fierce", "Relentless", "Ruthless"]
         name = ["Bulls", "Tigers", "Warriors", "Marauders", "Ravagers", "Ironclaws", "Destroyers"] 
-    elif tone == "Elagant": 
+    elif tone == "Elegant": 
         prefix = ["Shining", "Victorious", "Hopeful", "Noble", "Radiant", "Glorious", "Majestic"]
         name = ["Sanctum", "Concord", "Order", "Assembly", "Chronicle", "Legion", "Dynasty"]
     elif tone == "Whimsy": 
@@ -21,7 +21,7 @@ def tonegenerator(tone):
 
     return random.choice(prefix) + " " + random.choice(name)
 
-input_tone = input("Tone Choice(Harsh, Elagant, Whimsy, Mystical, Futuristic): ")
+input_tone = input("Tone Choice(Harsh, Elegant, Whimsy, Mystical, Futuristic): ")
 number_of_names = int(input("Number of Names to Generate: "))
 for i in range(number_of_names):
     generator = tonegenerator(input_tone)
